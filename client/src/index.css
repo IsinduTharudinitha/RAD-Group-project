@@ -1,0 +1,139 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+label {
+  font-size: 1.2rem;
+  color: #656262;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    90deg,
+    rgb(100, 94, 220) 0%,
+    rgb(143, 204, 149) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.form_container {
+  background-color: #fff;
+  padding: 2rem 3rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+}
+
+.form_container > h2 {
+  margin-block: 1rem;
+  padding-block: 0.6rem;
+  color: rgba(0, 212, 255, 1);
+}
+
+.form_container > form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.form_container div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.form_container input {
+  border: none;
+  padding: 0.5rem;
+  border-bottom: 1px solid gray;
+  font-size: 1.1rem;
+  outline: none;
+}
+
+.form_container input::placeholder {
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.form_container button {
+  background-color: rgba(0, 212, 255, 1);
+  color: #fff;
+  border: none;
+  padding: 0.6rem;
+  font-size: 2rem;
+  cursor: pointer;
+  border-radius: 0.3rem;
+}
+
+span a {
+  text-decoration: none;
+  color: rgba(0, 212, 255, 1);
+}
+
+.home_page {
+  height: 100vh;
+  width: 100vw;
+  background: #010009;
+  color: rgb(13, 12, 12);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: rem;
+  flex-direction: column;
+  gap: 1rem;
+  background-image: url('../public/Library.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  opacity: 0.8;  
+  height: 100vh;
+  margin: 0; 
+  
+}
+
+
+.home_page span {
+  color: rgb(0, 1, 1);
+}
+
+.home_page button{
+  background-color: rgb(2, 0, 53);
+  color: #efecec;
+  cursor: pointer;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  border-radius: 2rem;
+  transition: ease-in 0.3s;
+  border: none;
+}
+
+.home_page button:hover {
+  background-color: rgb(75, 76, 97);
+}
+
+
+@media only screen and (max-width: 1200px){
+  .home_page{
+    font-size: 2.5 rem;
+  }
+  .home_page button {
+    padding: 0.6rem 1rem;
+    font-size: 1.1rem;
+  }
+}
